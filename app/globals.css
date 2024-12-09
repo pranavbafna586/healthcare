@@ -2,20 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 210 36% 96%; /* Light blue */
+    --foreground: 210 36% 10%; /* Dark blue for text */
+    --card: 210 36% 100%; /* White with a hint of blue */
+    --card-foreground: 210 36% 10%; /* Dark blue for card text */
+    --popover: 210 36% 98%; /* Slightly brighter background */
+    --popover-foreground: 210 36% 12%; /* Darker text for contrast */
+    --primary: 220 65% 50%; /* Medium blue */
+    --primary-foreground: 210 36% 98%; /* White for text on primary buttons */
+    --secondary: 210 30% 90%; /* Pale blue */
+    --secondary-foreground: 210 36% 15%; /* Darker blue */
+    --muted: 210 30% 85%; /* Muted blue */
+    --muted-foreground: 210 36% 35%; /* Soft gray-blue for text */
+    --accent: 200 50% 60%; /* Vibrant blue accent */
+    --accent-foreground: 210 36% 10%; /* Dark blue for contrast */
+    --destructive: 0 84.2% 60.2%; /* Red for destructive actions */
+    --destructive-foreground: 0 0% 98%; /* White for destructive text */
+    --border: 210 30% 80%; /* Light border */
+    --input: 210 30% 90%; /* Light blue input background */
+    --ring: 220 60% 50%; /* Blue focus ring */
+    --chart-1: 220 65% 50%; /* Primary chart color */
+    --chart-2: 200 55% 45%; /* Secondary chart color */
+    --chart-3: 190 45% 40%; /* Supporting chart color */
+    --chart-4: 240 65% 55%; /* Highlight chart color */
+    --chart-5: 210 75% 65%; /* Accent chart color */
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 210 36% 10%; /* Dark blue background */
+    --foreground: 210 36% 90%; /* Light blue text */
+    --card: 210 36% 15%; /* Slightly lighter card background */
+    --card-foreground: 210 36% 95%; /* Lighter blue for text */
+    --popover: 210 36% 15%; /* Popover background */
+    --popover-foreground: 210 36% 90%; /* Light blue for popover text */
+    --primary: 210 36% 90%; /* Light blue */
+    --primary-foreground: 210 36% 10%; /* Dark blue for contrast */
+    --secondary: 210 30% 20%; /* Dark secondary blue */
+    --secondary-foreground: 210 36% 95%; /* Light blue for contrast */
+    --muted: 210 30% 15%; /* Muted dark blue */
+    --muted-foreground: 210 36% 65%; /* Grayish blue */
+    --accent: 220 60% 55%; /* Vibrant blue */
+    --accent-foreground: 210 36% 95%; /* Light blue for contrast */
+    --destructive: 0 62.8% 30.6%; /* Red for destructive actions */
+    --destructive-foreground: 0 0% 98%; /* White for text */
+    --border: 210 30% 25%; /* Dark border */
+    --input: 210 30% 20%; /* Darker input background */
+    --ring: 220 60% 50%; /* Bright blue ring */
+    --chart-1: 220 70% 50%; /* Primary chart color */
+    --chart-2: 160 60% 45%; /* Secondary chart color */
+    --chart-3: 200 65% 40%; /* Supporting chart color */
+    --chart-4: 240 65% 60%; /* Highlight chart color */
+    --chart-5: 210 75% 65%; /* Accent chart color */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
