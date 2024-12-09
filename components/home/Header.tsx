@@ -34,10 +34,11 @@ const Header = () => {
 
   return (
     <header className="fixed top-4 z-50 left-1/2 transform -translate-x-1/2 bg-gray-900 bg-opacity-90 px-4 lg:px-6 h-14 flex items-center shadow-sm rounded-full w-11/12 max-w-5xl">
-      <Link href="#" className="flex items-center justify-center" prefetch={false}>
+      <Link href="#" className="flex items-center justify-center gap-2" prefetch={false}>
         <BadgeIcon className="h-6 w-6 text-primary" />
         <span className="text-lg font-semibold text-white">Health Care</span>
       </Link>
+
 
       <nav className="ml-auto hidden md:flex gap-4 sm:gap-6">
         <NavigationMenu>
@@ -87,23 +88,23 @@ const Header = () => {
 
         {dropdownOpen && (
           <div className="absolute right-0 mt-2 bg-gray-900 rounded-lg shadow-lg w-48 p-2">
-          <Link
-            href="/dashboard"
-            className="flex items-center text-sm text-white px-4 py-2 hover:bg-white/10 rounded-md"
-            onClick={() => setDropdownOpen(false)} // Close dropdown on click
-          >
-            <Dashboard className="mr-2 h-5 w-5" /> {/* Dashboard icon */}
-            Dashboard
-          </Link>
-          <Link
-            href="/logout"
-            className="flex items-center text-sm text-red-600 px-4 py-2 hover:bg-white/10 rounded-md"
-            onClick={() => setDropdownOpen(false)} // Close dropdown on click
-          >
-            <LogOut className="mr-2 h-5 w-5" /> {/* Logout icon */}
-            Logout
-          </Link>
-        </div>
+            <Link
+              href="/dashboard"
+              className="flex items-center text-sm text-white px-4 py-2 hover:bg-white/10 rounded-md"
+              onClick={() => setDropdownOpen(false)} // Close dropdown on click
+            >
+              <Dashboard className="mr-2 h-5 w-5" /> {/* Dashboard icon */}
+              Dashboard
+            </Link>
+            <Link
+              href="/logout"
+              className="flex items-center text-sm text-red-600 px-4 py-2 hover:bg-white/10 rounded-md"
+              onClick={() => setDropdownOpen(false)} // Close dropdown on click
+            >
+              <LogOut className="mr-2 h-5 w-5" /> {/* Logout icon */}
+              Logout
+            </Link>
+          </div>
         )}
       </div>
 

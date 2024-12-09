@@ -19,7 +19,7 @@ import { FcGoogle } from "react-icons/fc";
 import { useState } from "react";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
-import { TriangleAlert } from "lucide-react";
+import { ArrowLeft, TriangleAlert } from "lucide-react";
 import { signIn } from "next-auth/react";
 
 const SignUp = () => {
@@ -68,10 +68,18 @@ const SignUp = () => {
   return (
     <div className="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-teal-500">
       <Card className="md:h-auto w-[80%] sm:w-[420px] p-4 sm:p-8 bg-white rounded-lg shadow-lg">
+      <div className="flex items-center mb-4">
+          <ArrowLeft
+            className="text-gray-700 cursor-pointer hover:scale-110 transition"
+            onClick={() => router.push("/")} // Redirect to home page
+          />
+          <h1 className="text-lg font-semibold text-gray-700 ml-2">Back to Home</h1>
+        </div>
         <CardHeader>
-          <CardTitle className="text-center text-xl font-semibold text-gray-800">Sign up</CardTitle>
+          <CardTitle className="text-center text-2xl font-bold text-gray-800"> Create a Healthcare Account
+          </CardTitle>
           <CardDescription className="text-sm text-center text-gray-600">
-            Use email or service to create an account
+          Secure and trusted account creation for the Healthcare Portal
           </CardDescription>
         </CardHeader>
         {!!error && (
