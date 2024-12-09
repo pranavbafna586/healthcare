@@ -8,57 +8,57 @@ body {
 
 @layer base {
   :root {
-    --background: 210 36% 96%; /* Light blue */
-    --foreground: 210 36% 10%; /* Dark blue for text */
-    --card: 210 36% 100%; /* White with a hint of blue */
-    --card-foreground: 210 36% 10%; /* Dark blue for card text */
-    --popover: 210 36% 98%; /* Slightly brighter background */
-    --popover-foreground: 210 36% 12%; /* Darker text for contrast */
-    --primary: 220 65% 50%; /* Medium blue */
-    --primary-foreground: 210 36% 98%; /* White for text on primary buttons */
-    --secondary: 210 30% 90%; /* Pale blue */
-    --secondary-foreground: 210 36% 15%; /* Darker blue */
-    --muted: 210 30% 85%; /* Muted blue */
-    --muted-foreground: 210 36% 35%; /* Soft gray-blue for text */
-    --accent: 200 50% 60%; /* Vibrant blue accent */
-    --accent-foreground: 210 36% 10%; /* Dark blue for contrast */
+    --background: 210 65% 90%; /* Light blue (#D4EBF8) */
+    --foreground: 220 75% 30%; /* Dark blue (#0A3981) */
+    --card: 210 65% 100%; /* White */
+    --card-foreground: 220 75% 30%; /* Dark blue */
+    --popover: 210 65% 95%; /* Slightly lighter background */
+    --popover-foreground: 220 75% 35%; /* Slightly lighter dark blue */
+    --primary: 220 75% 40%; /* Primary blue (#1F509A) */
+    --primary-foreground: 210 65% 98%; /* Almost white */
+    --secondary: 210 65% 85%; /* Lighter version of light blue */
+    --secondary-foreground: 220 75% 30%; /* Dark blue */
+    --muted: 210 65% 80%; /* Muted light blue */
+    --muted-foreground: 220 75% 40%; /* Slightly lighter primary blue */
+    --accent: 220 75% 40%; /* Same as primary for consistent look */
+    --accent-foreground: 210 65% 98%; /* Almost white */
     --destructive: 0 84.2% 60.2%; /* Red for destructive actions */
-    --destructive-foreground: 0 0% 98%; /* White for destructive text */
-    --border: 210 30% 80%; /* Light border */
-    --input: 210 30% 90%; /* Light blue input background */
-    --ring: 220 60% 50%; /* Blue focus ring */
-    --chart-1: 220 65% 50%; /* Primary chart color */
-    --chart-2: 200 55% 45%; /* Secondary chart color */
-    --chart-3: 190 45% 40%; /* Supporting chart color */
-    --chart-4: 240 65% 55%; /* Highlight chart color */
-    --chart-5: 210 75% 65%; /* Accent chart color */
+    --destructive-foreground: 0 0% 98%; /* White */
+    --border: 210 65% 70%; /* Lighter border */
+    --input: 210 65% 85%; /* Light blue input background */
+    --ring: 220 75% 40%; /* Primary blue ring */
+    --chart-1: 220 75% 40%; /* Primary blue */
+    --chart-2: 210 65% 80%; /* Light blue */
+    --chart-3: 220 75% 30%; /* Darkest blue */
+    --chart-4: 210 65% 70%; /* Medium light blue */
+    --chart-5: 220 75% 50%; /* Slightly brighter primary blue */
     --radius: 0.5rem;
   }
   .dark {
-    --background: 210 36% 10%; /* Dark blue background */
-    --foreground: 210 36% 90%; /* Light blue text */
-    --card: 210 36% 15%; /* Slightly lighter card background */
-    --card-foreground: 210 36% 95%; /* Lighter blue for text */
-    --popover: 210 36% 15%; /* Popover background */
-    --popover-foreground: 210 36% 90%; /* Light blue for popover text */
-    --primary: 210 36% 90%; /* Light blue */
-    --primary-foreground: 210 36% 10%; /* Dark blue for contrast */
-    --secondary: 210 30% 20%; /* Dark secondary blue */
-    --secondary-foreground: 210 36% 95%; /* Light blue for contrast */
-    --muted: 210 30% 15%; /* Muted dark blue */
-    --muted-foreground: 210 36% 65%; /* Grayish blue */
-    --accent: 220 60% 55%; /* Vibrant blue */
-    --accent-foreground: 210 36% 95%; /* Light blue for contrast */
-    --destructive: 0 62.8% 30.6%; /* Red for destructive actions */
-    --destructive-foreground: 0 0% 98%; /* White for text */
-    --border: 210 30% 25%; /* Dark border */
-    --input: 210 30% 20%; /* Darker input background */
-    --ring: 220 60% 50%; /* Bright blue ring */
-    --chart-1: 220 70% 50%; /* Primary chart color */
-    --chart-2: 160 60% 45%; /* Secondary chart color */
-    --chart-3: 200 65% 40%; /* Supporting chart color */
-    --chart-4: 240 65% 60%; /* Highlight chart color */
-    --chart-5: 210 75% 65%; /* Accent chart color */
+    --background: 220 75% 20%; /* Darkest blue */
+    --foreground: 210 65% 95%; /* Very light blue */
+    --card: 220 75% 25%; /* Slightly lighter than background */
+    --card-foreground: 210 65% 98%; /* Almost white */
+    --popover: 220 75% 25%; /* Same as card */
+    --popover-foreground: 210 65% 98%; /* Almost white */
+    --primary: 210 65% 95%; /* Very light blue */
+    --primary-foreground: 220 75% 20%; /* Darkest blue */
+    --secondary: 220 75% 30%; /* Dark blue */
+    --secondary-foreground: 210 65% 98%; /* Almost white */
+    --muted: 220 75% 25%; /* Dark muted blue */
+    --muted-foreground: 210 65% 85%; /* Light blue */
+    --accent: 210 65% 95%; /* Very light blue */
+    --accent-foreground: 220 75% 20%; /* Darkest blue */
+    --destructive: 0 62.8% 30.6%; /* Dark red */
+    --destructive-foreground: 0 0% 98%; /* White */
+    --border: 220 75% 35%; /* Dark border */
+    --input: 220 75% 30%; /* Dark input background */
+    --ring: 210 65% 95%; /* Very light blue ring */
+    --chart-1: 210 65% 95%; /* Very light blue */
+    --chart-2: 220 75% 30%; /* Darkest blue */
+    --chart-3: 220 75% 40%; /* Primary blue */
+    --chart-4: 210 65% 85%; /* Light blue */
+    --chart-5: 220 75% 50%; /* Slightly brighter primary blue */
   }
 }
 

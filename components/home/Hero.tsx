@@ -17,9 +17,7 @@ const Hero = () => {
         workflows, and improve health outcomes with our advanced platform.
       </p>
       <div className="flex gap-4">
-        <Link type="button" href="/signup">
-          <Button className="rounded-full">Get Started</Button>
-        </Link>
+        
         <Button className="rounded-full" variant="secondary">
           Learn More
         </Button>
