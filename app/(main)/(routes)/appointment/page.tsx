@@ -112,7 +112,7 @@ const MultiStepForm: React.FC = () => {
               <option value="">Select ID type</option>
               <option value="Aadhaar">Aadhaar</option>
               <option value="Passport">Passport</option>
-              <option value="Driver's License">Driver's License</option>
+              <option value="Driver's License">Driver&apos;s License</option>
             </select>
             <input
               type="text"

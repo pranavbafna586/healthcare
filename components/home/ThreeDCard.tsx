@@ -1,12 +1,8 @@
 "use client";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-
 import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
-import router from "next/router";
 
 export default function ThreeDCard() {
   return (

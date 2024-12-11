@@ -24,7 +24,7 @@ const AppointmentConfirmation: React.FC = () => {
           Your appointment request has been successfully submitted!
         </h1>
         <p className="text-muted-foreground mb-6">
-          We'll be in touch shortly to confirm.
+          We&apos;ll be in touch shortly to confirm.
         </p>
 
         <div className="bg-popover p-4 rounded-lg mb-6">

@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import { useState } from "react";
 import {
   LineChart,
@@ -19,7 +18,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { ListFilter } from "lucide-react";
 
-export const Dashboard = () => {
+const Dashboard = () => {
   const [selectedTab, setSelectedTab] = useState("week");
 
   // Dummy data for charts

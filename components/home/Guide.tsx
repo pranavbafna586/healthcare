@@ -1,4 +1,4 @@
-import { UploadIcon, FilePenIcon, SendIcon } from "lucide-react";
+import { SendIcon } from "lucide-react";
 import React from "react";
 
 const Guide = () => {
@@ -21,7 +21,7 @@ const Guide = () => {
             Dashboard
           </h3>
           <p className="text-muted-foreground group-hover:text-primary-foreground">
-            Track your certificates' status, manage recipients, and view detailed reports.
+            Track your certificates&apos; status, manage recipients, and view detailed reports.
           </p>
         </div>
         <div className="bg-background rounded-xl shadow-md p-6 space-y-4 group hover:bg-primary transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl group-hover:rounded-xl">
