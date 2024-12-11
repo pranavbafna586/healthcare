@@ -6,6 +6,7 @@ import {
   MailIcon,
   PrinterIcon,
 } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Features = () => {
@@ -31,6 +32,7 @@ const Features = () => {
               Leverage advanced algorithms to diagnose a wide range of diseases, ensuring accurate and quick results.
             </p>
           </div>
+          <Link href="/appointment">
           <div className="bg-background rounded-xl shadow-md p-6 space-y-4 group hover:bg-primary transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl">
             <PrinterIcon className="text-primary h-8 w-8 group-hover:text-primary-foreground" />
             <h3 className="text-2xl font-bold group-hover:text-primary-foreground">
@@ -40,6 +42,7 @@ const Features = () => {
               Schedule appointments with healthcare professionals with ease, directly through the platform.
             </p>
           </div>
+          </Link>
           <div className="bg-background rounded-xl shadow-md p-6 space-y-4 group hover:bg-primary transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl">
             <MailIcon className="text-primary h-8 w-8 group-hover:text-primary-foreground" />
             <h3 className="text-2xl font-bold group-hover:text-primary-foreground">

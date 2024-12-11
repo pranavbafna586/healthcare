@@ -1,4 +1,6 @@
 "use client";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 import Image from "next/image";
 import React from "react";
@@ -37,19 +39,22 @@ export default function ThreeDCard() {
             translateZ={20}
             as={Link}
             href=""
-            // target="__blank"
+            target="__blank"
             className="px-4 py-2 rounded-xl text-s text-white font-normal dark:text-white"
           >
             Book now →
           </CardItem>
           <CardItem
             translateZ={20}
-            as="button"
-            onClick={() => router.push("/sign-up")}
+            as={Link}
+            href="/sign-up"
+            // target="/sign-up"
             className="px-4 py-2 rounded-xl bg-white dark:bg-white dark:text-black text-black text-xs font-bold"
           >
             Sign up
           </CardItem>
+
+
         </div>
       </CardBody>
     </CardContainer>
